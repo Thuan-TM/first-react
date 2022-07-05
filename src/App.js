@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { useCallback, useEffect, useState } from 'react';
+
+import {BrowserRouter , Route,Routes} from 'react-router-dom'
+import Home from './page/Home';
+import Header from './component/Header';
+import Movie from './page/Movie';
 
 function App() {
+  const [Dlphim,setDlphim] = useState()
+  const callPhim = useCallback((data)=>{
+    setDlphim(data)
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App ">
+      <BrowserRouter>
+            <Header/>
+        <Routes>
+          <Route path='/' element= {<Home callPhim= {callPhim}/>} />
+          <Route path='/phim/:slug' element={<Movie Dlphim = {Dlphim}/>} />
+        </Routes>
+      </BrowserRouter>
+    // </div>
   );
 }
 
