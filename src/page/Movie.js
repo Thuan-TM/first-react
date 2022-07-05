@@ -14,7 +14,7 @@ const Movie = ({Dlphim}) => {
     return (
         <div className='py-20 min-h-screen bg-gray-800 '>
             <div className='container mx-auto xxl:mx-3'>
-                <Link to='/' className='text-white text-2xl py-4 border-b-[1px] border-slate-600 block'>
+                <Link to='first-react/' className='text-white text-2xl py-4 border-b-[1px] border-slate-600 block'>
                     <i className="fas fa-arrow-left"></i> 
                     <span className='ml-5'>Home</span>
                 </Link>

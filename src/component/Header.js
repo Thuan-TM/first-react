@@ -9,7 +9,7 @@ function Header(props) {
         <div className='fixed top-0 w-full z-50 bg-slate-700'>
            <nav className="container px-2 py-3 mx-auto ">
                 <div className=" flex flex-wrap justify-between items-center mx-auto">
-                    <Link to="/" className="flex items-center">
+                    <Link to="first-react/" className="flex items-center">
                         <img src={logo} className="mr-3 h-9 sm:h-9" alt="Flowbite Logo" />
                         <span className="self-center text-xl font-semibold whitespace-nowrap text-white ">DoraPhim</span>
                     </Link>
