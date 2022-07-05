@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
             <Header/>
         <Routes>
-          <Route path='/' element= {<Home callPhim= {callPhim}/>} />
+          <Route path='first-react/' element= {<Home callPhim= {callPhim}/>} />
           <Route path='/phim/:slug' element={<Movie Dlphim = {Dlphim}/>} />
         </Routes>
       </BrowserRouter>
